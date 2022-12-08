@@ -29,5 +29,9 @@
   <run_depend>rospy</run_depend>
   <run_depend>tf</run_depend>
   <run_depend>xacro</run_depend>
+  <export>
+    <gazebo_ros gazebo_media_path="${prefix}/world" />
+    <gazebo_ros gazebo_model_path="${prefix}/world" /> 
+  </export>
 
 </package>

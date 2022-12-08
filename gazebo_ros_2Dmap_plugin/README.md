@@ -31,6 +31,13 @@ You can use the `map_saver` node from the `map_server` package inside ros naviga
 ```
 rosrun map_server map_saver -f <mapname> /map:=/map2d
 ```
+
+If you use docker environment, the following command saves map in map directory.
+
+```
+rosrun map_server map_saver -f ~/catkin_ws/src/gazebo_ros_2Dmap_plugin/map/map /map:=/map2d
+```
+
 The last map generated with the ```/gazebo_2Dmap_plugin/generate_map``` call is saved.
 
 ## Hints
