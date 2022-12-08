@@ -3,7 +3,24 @@ Gazebo simulator plugin to automatically generate a 2D occupancy map from the si
 
 This plugin was adapted from the [octomap plugin](https://github.com/ethz-asl/rotors_simulator/tree/master/rotors_gazebo_plugins) from ETH Zürich.
 
-## Usage 
+## How ti use docker environment
+1. Clone
+    ```shell
+    git clone https://github.com/Decwest/gazebo_ros_2Dmap_plugin.git
+    ```
+2. Build docker image
+    ```shell
+    cd gazebo_ros_2Dmap_plugin/docker
+    ./build.sh
+    ```
+3. Launch docker container (At first, you need catkin_make (cm alias is available))
+    ```
+    cd gazebo_ros_2Dmap_plugin/docker
+    ./run.sh
+    GAZEBO2ROSMAP$ cm
+    ```
+
+## Usage
 Check out the plugin in your `catkin_ws` and build it with `catkin_make`.
 To include the plugin, add the following line in between the `<world> </world>` tags of your Gazebo world file:
 
